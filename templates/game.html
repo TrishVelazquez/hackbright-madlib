@@ -1,9 +1,7 @@
-<!doctype html>
-<html>
-<head>
-  <title>MADLIBS!</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+  {% block title %}MADLIBS!{% endblock %}
+  {% block content %}
     Fill in your words below!
     <form action="/madlib">
         Enter a person: <input type="text" name="person"><br>
@@ -19,5 +17,4 @@
         Pick an adjective: <input type="text" name="adjective"><br>
         <input type="submit">
     </form>
-</body>
-</html>
+  {% endblock %}
