@@ -57,7 +57,7 @@ def show_madlib_form():
 @app.route('/madlib')
 def show_madlib():
     """Shows finished mad libs text"""
-    person = request.args.get("person")
+    person = request.args.getlist("person")
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective",)

@@ -4,7 +4,12 @@
   {% block content %}
     <h2>Fill in your words below!</h2>
     <form action="/madlib">
-        Enter a person: <input type="text" name="person"><br>
+        Enter player(s): <input type="checkbox" name="person" value="Bob">Bob
+                        <input type="checkbox" name="person" value="Izzy">Izzy
+                        <input type="checkbox" name="person" value="Sam">Sam
+                        <input type="checkbox" name="person" value="Suzie">Suzie
+                        <input type="checkbox" name="person" value="Cameron">Cameron
+                        <input type="checkbox" name="person" value="Lisa">Lisa<br>
         Choose a color: <select name="color">
             <option value="purple">Purple</option>
             <option value="red">Red</option>

@@ -3,6 +3,10 @@
   {% block title %} Here's your Madlib {% endblock %}
   {% block content %}
     There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
-    When {{ person }} went to pick it up, it burst into flames in a totally
+    When 
+    {% for name in person %}
+        {{ name }}
+    {% endfor %}
+    went to pick it up, it burst into flames in a totally
     {{ adjective }} way.
   {% endblock %}

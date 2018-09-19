@@ -2,6 +2,13 @@
 
   {% block title %} Here's your Madlib {% endblock %}
   {% block content %}
-    One day {{ person }} found a {{ color }} {{ noun }} on the ground outside lab.
-    {{ person }} picked it up and said "Wow, this is {{ adjective }}".
+    One day 
+    {% for name in person %}
+        {{ name }}
+    {% endfor %}
+    found a {{ color }} {{ noun }} on the ground outside lab.
+    {% for name in person %}
+        {{ name }}
+    {% endfor %}
+    picked it up and said "Wow, this is {{ adjective }}".
   {% endblock %}
