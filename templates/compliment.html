@@ -2,7 +2,7 @@
 
   {% block title %}A Compliment{% endblock %}
   {% block content %}
-Hi {{ person }}! I think you're {{ compliment }}!<br><br>
+    <h2>Hi {{ person }}! I think you're <span>{{ compliment }}</span>!</h2>
     <form action="/game">Would you like to play a game?
         <input type="radio" name="yesno" value="yes">Yes
         <input type="radio" name="yesno" value="no">No
